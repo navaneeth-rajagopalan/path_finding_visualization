@@ -1,0 +1,33 @@
+.Node{
+    display: inline-block;
+    border: 1px solid #00000061;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;    
+}
+
+.Start{
+    background-color: green;
+}
+
+.Target{
+    background-color: red;
+}
+
+.Visited{
+    background-color: green;
+    animation: animateVisit 1s;
+}
+
+.Path{
+    background-color: black;
+    animation: animatePath 1s;
+}
+
+@keyframes animateVisit {
+    from {background-color: lightgreen;}
+}
+
+@keyframes animatePath {
+    from {background-color: white;}
+}
